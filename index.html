@@ -3,10 +3,91 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="js/script.js" defer></script>
+
 	<title>Lesson 17</title>
 </head>
 <body>
-	
+	<div class="wrapper">
+		<h1 class="title">Задание №17</h1>
+	 <form action="#" class="form">
+		<div class="input">
+			<label for="name">
+				Введите имя
+			</label>
+			<input required type="text" name="name" id="name">
+		</div>
+		<div class="input">
+			<label for="age">
+				Введите возраст
+			</label>
+			<input required type="number" name="age" id="age">
+		</div>
+		<div class="select">
+			<label for="adult">
+				Совершеннолетний?
+			</label>
+			<select name="isAdult" id="adult">
+				<option selected>Выберите</option>
+				<option value="yes">Да</option>
+				<option value="no">Нет</option>
+			</select>
+		</div>
+		<div class="radio">
+			<label >
+				Укажите пол:
+			</label>
+			<input required type="radio" name="gender" value="man"><span>Мужской</span>
+			<input required type="radio" name="gender" value="women"><span>Женский</span>
+		</div>
+		<div class="is-child">
+			<div class="input">
+				<label for="school">
+					Укажите номер школы:
+				</label>
+				<input type="number" name="schoolNumber" value="" id="school">
+			</div>
+			<div class="input">
+				<label for="toys">
+					Укажите любимую игрушку:
+				</label>
+				<input type="text" name="favouriteToys" value="" id="toys">
+			</div>
+		</div>
+		<div class="is-adult">
+			<div class="input">
+				<label for="prof">
+					Укажите профессию:
+				</label>
+				<input type="text" name="myProfession" value="" id="prof">
+			</div>
+			<div class="input">
+				<label for="hobbies">
+					Укажите хобби:
+				</label>
+				<input type="text" name="hobbies" value="" id="hobbies">
+			</div>
+		</div>
+		<button class="btn btn-submit" type="submit">Добавить</button>
+		<button class="btn btn-reset" type="reset">Сброс</button>
+	 </form>
+	 <div class="table">
+		<div class="table__header header-table">
+			<div class="header-table__item header-table__item_name">Имя</div>
+			<div class="header-table__item header-table__item_age">Возраст</div>
+			<div class="header-table__item header-table__item_adult">Совершеннолетие</div>
+			<div class="header-table__item header-table__item_gender">Пол</div>
+			<div class="header-table__item header-table__item_school">Номер школы</div>
+			<div class="header-table__item header-table__item_toy">Игрушка</div>
+			<div class="header-table__item header-table__item_prof">Профессия</div>
+			<div class="header-table__item header-table__item_hobby">Хобби</div>
+			<div class="header-table__item header-table__item_del">Удалить</div>
+		</div>
+		<div class="table__body body-table">
+			
+		</div>
+	 </div>
+	</div>
 </body>
 </html>
